@@ -1,0 +1,27 @@
+{
+    "name": "base-bailey-memory",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
+        "start": "node app.js"
+    },
+    "keywords": [],
+    "dependencies": {
+        "@bot-whatsapp/bot": "^0.1.33",
+        "@bot-whatsapp/cli": "^0.1.33",
+        "@bot-whatsapp/database": "^0.1.33",
+        "@bot-whatsapp/portal": "file:packages/portalQR",
+        "@bot-whatsapp/provider": "^0.1.33",
+        "@whiskeysockets/baileys": "^6.4.0",
+        "dotenv": "^16.3.1",
+        "google-auth-library": "^8.8.0",
+        "google-spreadsheet": "^4.0.2",
+        "link-preview-js": "^3.0.5",
+        "wa-sticker-formatter": "4.3.2"
+    },
+    "author": "",
+    "license": "ISC"
+}

@@ -1,0 +1,9 @@
+node_modules/
+key.json
+bot_*
+*.log
+*.png
+db.json
+telefonos.json
+.env
+unidad-segura-a82701fc90ad.json
