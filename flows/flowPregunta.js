@@ -22,7 +22,9 @@ export const flowPregunta = bot.addKeyword(bot.EVENTS.ACTION)
             await flowDynamic(' Porfavor escriba nuevamente solo el número de la siguiente unidad:');
         } else {
             // Si no es 'si' ni 'no', hacer otra cosa
-            fallBack()
+            await sendReaction(provider, ctx, "❌");
+            await typing(provider, ctx, 2000);
+            fallBack('Por favor responda para continuar\n\n*¿Abordo la unidad?*\nResponda con un: *SI* o *N0*')
         }
 
     })
